@@ -1,0 +1,18 @@
+<!--pages/collect/collect.wxml-->
+<view class='collectTitle title'>我的收藏</view>
+<view wx:if='{{!hasCollect}}' style='width:80%;padding: 20rpx 80rpx;font-size:24px;'>暂无收藏</view>
+<block wx:for="{{contentList}}" wx:key="{{index}}">
+            <view class='newsBox'>
+              <navigator url='/pages/newsdetail/newsdetail?cat={{ item.id }}'>
+                <view class='newsBox-title'>
+                  {{item.title}}
+                </view>
+                <view class='newsBox-img'>
+                  <image src='https://cassia.top/milk-news/file/download?fileName={{item.url[0]}}' style='width:100%;height:100%'></image>
+                </view>
+                <view class='newBox-time'>
+                  <text decode='true'>{{item.organization}}&emsp;{{item.timeAgo}}&emsp;{{item.commentSize}}评论</text>
+                </view>
+              </navigator>
+            </view>
+          </block>

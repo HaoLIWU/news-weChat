@@ -1,0 +1,28 @@
+<!--pages/newsdetails/newsdtlsindex01/newsdetails01.wxml-->
+
+  <view class='title02'>亲爱的孩子，欢迎你们回家”——记四川青少年赴俄交流团重回“海洋”全俄儿童中心</view>
+  <view class='date'>人民日报 2018-09-10</view>
+  <view class='image'>
+    <image src='/img/newsindex02.jpg' class='photo'></image>
+  </view>
+  <view class='paragraph'>
+    “海洋”全俄儿童中心老师彼得洛娃·娜塔莉亚（左）和四川女孩唐翼菲重逢。老师手机里存着当年两人的合影。
+    “亲爱的孩子，欢迎你们回家！”9月9日，四川青少年赴俄交流团的姑娘小伙子们刚走下大巴，“海洋”全俄儿童中心主任安德列·巴济列夫斯基就热情地呼喊着。
+    10年，岁月变迁，震灾中幸存的少年已经长大成人。在“海洋”儿童中心老师彼得洛娃·娜塔莉亚眼里，10年前他们还是会在夜晚偷偷哭泣的孩子，如今已成为留俄学生、医师、小学老师……
+    10年，时间仿佛停了下来。走进生活过3周的宿舍楼，这些20多岁的小姑娘小伙子欢呼雀跃，如10年前一般，露出了孩子般纯净的笑容。沿着一级级环形楼梯向上走，映入眼帘的一面照片墙已被围得水泄不通。“快看，这是我们当年的照片！”“这张是我们刚来‘海洋’的时候”“这张是我们和俄罗斯的孩子一起做游戏”……
+     一张张照片，让10年前的一幕幕画面在大家脑海中生动浮现。负责引领参观的“海洋”儿童中心老师塔季扬娜·玛扎尔看着眼前的一幕，眼中满是慈爱与欣慰。“我们再一起坐在这里，像以前一样唱首歌吧！”在一个姑娘的提议下，大家整齐坐在长椅上，一边拍手，一边齐声唱起那首在脑海中无数次重现的俄文歌曲：“海洋有我，海洋有我们，海洋是这个国家最可爱的人……”熟悉的旋律，10年前每天如约在这里唱响。10年过去了，相同的旋律再次响起，唱着唱着，便红了眼眶。
+  </view>
+<view class='footerContent'>
+  <navigator>
+    <image src='https://www.easyicon.net/download/png/1217287/128/'></image>
+    <text>评论</text>
+  </navigator>
+  <view bindtap="haveSave">
+    <image src='{{isClick?"https://www.easyicon.net/download/png/542649/128/":"https://www.easyicon.net/download/png/538061/72/"}}' ></image>
+    <text>{{isClick?'已收藏':'收藏'}}</text>
+  </view>
+ 
+  <button open-type="share" bindtap='onShareAppMessage' style='background-color: #fff;'>
+    <image src='https://www.easyicon.net/download/png/1183447/128/'></image>
+  </button>
+</view>

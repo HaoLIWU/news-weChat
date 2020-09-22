@@ -1,0 +1,41 @@
+<!--pages/report/report.wxml-->
+<!-- 报道资料 -->
+<form>
+  <view class='reportView'>
+    <!-- 文本框 -->
+    <textarea class='problem' placeholder='请描述一下事件详情' placeholder-class="placeholderStyle" bindblur='problemInput' value='{{problemIpt}}' maxlength='-1'>
+    </textarea>
+    <!-- 两张可以点击的小图片 -->
+    <view class='pic-video'>
+      <view class="reportpicView" bindtap="chooseimage">
+        <image class='reportpic' src='/img/reportpic.png'></image>
+      </view>
+      <view class="reportvideoView" bindtap="chooseVideo">
+        <image class='reportvideo' src='/img/reportvideo.png'></image>
+      </view>
+    </view>
+    <!-- 图片展示区 -->
+    <view class="image_content">
+      <view class='image choseImg' wx:for="{{img_url}}" wx:key="">
+        <image class='delete-btn' src='/img/delete.png' bindtap="deleteImage" id="{{index}}"></image>
+        <image class="moment_img" src="{{item}}"></image>
+      </view>
+      <view class='video choseVideo' wx:if="{{video_url != ''}}">
+        <image class='delete-btn' src='/img/delete.png' bindtap="deleteVideo"></image>
+        <video class="moment_img" src="{{video_url}}" controls></video>
+      </view> 
+      <view class='image' style='display:{{hideAdd?"none":"block"}}'>
+        <image bindtap="chooseimage" class="moment_img" src='/img/add.jpg'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 电话框 -->
+  <view class='phone'>
+    <view class="phoneimgView">
+      <image class='phoneicon' src='/img/reportphone.png'></image>
+    </view>
+    <input class='phonetext' placeholder='联系电话（仅工作人员可见）' placeholder-class="placeholderStyle2" bindblur='phoneInput' value='{{phoneIpt}}'></input>
+  </view>
+  <!-- 发送按钮 -->
+  <text class='submit' decode='true' bindtap="SubmitClick">发&emsp;&emsp;送</text>
+</form>

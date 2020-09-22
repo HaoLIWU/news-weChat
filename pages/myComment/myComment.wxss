@@ -1,0 +1,58 @@
+/* pages/myComment/myComment.wxss */ 
+page{
+  background-color: #FFFFF0;
+}
+.content{
+  padding: 20rpx 0;
+  margin: 10rpx 35rpx;
+  border: 2rpx solid red;
+  border-radius: 10rpx;
+}
+text{
+  display: block;
+  height: 64rpx;
+}
+text:nth-child(2){
+  width: 80%; 
+  padding: 0 80rpx;
+  color: #2F4F4F;
+}
+.newsBox{
+  width: 94%;
+  height: 230rpx;
+  background-color: #fff;
+  position: relative;
+  padding: 28rpx 20rpx;
+  border-bottom: 2rpx solid #333;
+  border-top: 2rpx solid #333;
+}
+.newsBox-img{
+  width: 276rpx;
+  height: 230rpx;
+  float: right;
+}
+.newsBox-title{
+  width: 300rpx;
+  height: 150rpx;
+  float: left;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  line-clamp:3;
+}
+.newBox-time{
+  font-size: 16px;
+  position: absolute;
+  bottom: 28rpx;
+}
+.newBox-time text{
+  display: block;
+}
+.newBox-time .organization{
+  width: 130rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.newBox-time .time-comment{
+ padding: 0 0 0 130rpx;
+}

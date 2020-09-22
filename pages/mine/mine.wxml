@@ -1,0 +1,39 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class='bgimg'>
+    <!--头像昵称-->
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='loginButton'>点击登录</button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class='collect cell'>
+      <navigator class='cell-item collect-item' url='/pages/collect/collect'>
+        <image class='Icon' src='/img/collect.png'></image>
+        <text class='txt'>收藏</text>
+      </navigator>
+    </view>
+    <view class='comment cell'>
+      <navigator class='cell-item comment-item' url='/pages/myComment/myComment?cat={{userInfo.nickName}}'>
+        <image class='Icon' src='/img/comment.png'></image>
+        <text class='txt'>评论</text>
+      </navigator>
+    </view>
+    <view class='message cell'>
+      <navigator class='cell-item message-item' url='/pages/message/message?cat={{userInfo.nickName}}'>
+        <image class='Icon' src='/img/message.png'></image>
+        <text class='txt'>消息</text>
+      </navigator>
+    </view>
+    <view class='about cell'>
+      <navigator class='cell-item about-item' url='/pages/aboutUs/aboutUs'>
+        <image class='Icon' src='/img/about.png'></image>
+        <text class='txt'>关于</text>
+      </navigator>
+    </view>
+  </view>
+</view>

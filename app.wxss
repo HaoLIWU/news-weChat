@@ -1,0 +1,109 @@
+/**app.wxss**/
+page{
+    background-color:#EAEAEA;
+}
+
+/* 封装：间隔线 */
+.diver{
+  height: 20rpx;
+  background-color: #f1f1f1;
+  box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, 0.1) inset;
+}
+
+/* 封装: 细线边框*/
+/* 移动端边框问题:右边框普通写法占位置,也容易“对不齐” */
+/* 解决方法:伪元+定位 实现 */
+.bd-r{
+  /* 子绝父相 */
+  position: relative;
+}
+.bd-r::after{
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 封装：向右小箭头*/
+/* 解决方法：先取上右两边框，再向右转45度 */
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: "";
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  transform: rotate(45deg);
+}
+
+/* 封装：星星评分*/
+.star-after{
+  color: #ccc;
+}
+.star-before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f19e38;
+  /* 对宽度设置可以实现半颗星,
+  overflow可以将那 百分之10 给隐藏掉 */
+  width: 90%;
+  overflow: hidden;
+}
+
+/* 封装：单行超出宽度变省略号*/
+.ell{
+   /* 多出隐藏 */
+  overflow: hidden;
+   /* 设置不换行 */
+  white-space: nowrap;
+  /* 设置超出变为省略号
+   */
+  text-overflow: ellipsis; 
+}
+
+/* 封装：加载更多 */
+ .loadmore{
+    color: #888;
+    font-size: 16px;
+    line-height: 100rpx;
+    text-align: center;
+  }
+.loadmore.loading::before{
+    content: "";
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: -10rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+    vertical-align: middle;
+    animation: loading 1s steps(12) infinite;
+    background: transparent url(https://www.easyicon.net/download/png/1228812/64) no-repeat;
+    background-size: 100%;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*
+*页面顶部样式
+*/
+.title{
+  border-bottom: 4rpx dashed red;
+  text-align: center;
+  height: 150rpx;
+  line-height: 150rpx;
+  font-size: 24px;
+}

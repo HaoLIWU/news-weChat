@@ -1,0 +1,75 @@
+/* pages/newsdetails/newsdtlsindex01/newsdetails01.wxss */
+
+page {
+  background-color: white;
+}
+
+/* 标题 */
+
+.title01 {
+  font-size: 50rpx;
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+
+/* 日期 */
+
+.date {
+  opacity: 0.4;
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+
+/* 段落 */
+
+.paragraph {
+  display: block;
+  font-size: 17px;
+  padding: 20rpx 30rpx;
+  line-height: 60rpx;
+  /* 文本首行缩进两个字体 */
+  text-indent: 2em;
+  /* 是文本两端对齐 */
+  text-align:justify;
+  word-break: break-all;
+  /* 强制换行 */
+  /* white-space:pre-line; */
+}
+
+/* 相片 */
+
+.image {
+  margin-left: 80rpx;
+  padding: 20rpx 0;
+  width: 80%;
+  height: 500rpx;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 装底部 评论 收藏 分享 的容器 */
+.footerContent{
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+}
+/* 底部容器的 导航键 */
+.footerContent navigator,
+.footerContent view,
+.footerContent button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+/* 底部容器的 导航键  的图片*/
+.footerContent image{
+  width: 32px;
+  height: 32px;
+}

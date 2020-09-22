@@ -1,0 +1,196 @@
+/* pages/report/report.wxss */
+
+/* 报料资料容器 */
+.reportView {
+  width: 100%;
+  background-color: white;
+  padding: 20rpx;
+}
+
+/* 描述事情容器*/
+
+.problem {
+  display: inline-block;
+  width: 96%;
+  height: 320rpx;
+  overflow: hidden;
+}
+
+.placeholderStyle {
+  font-size: 34rpx;
+  opacity: 0.5;
+}
+
+/* 添加图片和视频父容器*/
+
+.pic-video {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+/* 图片图标容器 */
+
+.reportpicView {
+  border: 4rpx solid;
+  border-color: white #eaeaea #eaeaea #eaeaea;
+  padding: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+/* 图片图标 */
+
+.reportpic {
+  width: 90%;
+  height: 90%;
+  opacity: 0.7;
+}
+
+/* 视频图标容器 */
+
+.reportvideoView {
+  margin-left: 20rpx;
+  border: 4rpx solid;
+  border-color: white #eaeaea #eaeaea #eaeaea;
+  padding: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+/* 视频图标 */
+
+.reportvideo {
+  width: 85%;
+  height: 85%;
+  opacity: 0.7;
+}
+
+/* 添加图片的容器*/
+
+.addpic {
+
+  width: 180rpx;
+  height: 180rpx;
+  cursor: pointer;
+}
+
+
+
+/*获取本地的图片*/
+
+.choose {
+  width: 180rpx;
+  height: 180rpx;
+  position: absolute;
+  flex-wrap: wrap; /*规定灵活的项目在必要的时候拆行或拆列。*/
+  top: 390rpx;
+  left: 20rpx;
+  margin-right: 15rpx;
+  float: left;
+}
+
+/*删除图片按钮*/
+
+.delete-btn {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  flex-wrap: wrap;
+  top: -12rpx;
+  left: 174rpx;
+}
+
+/*删除图片图标*/
+
+.deleteIcon {
+  width: 100%;
+  height: 100%;
+}
+
+/* 电话 */
+
+.phone {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+}
+
+/* 图标容器 */
+
+.phoneimgView {
+  padding: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+/* 电话图标 */
+
+.phoneicon {
+  width: 80%;
+  height: 80%;
+  margin-top: 10rpx;
+  opacity: 0.7;
+}
+
+/* 联系电话字体 */
+
+.phonetext {
+  width: 600rpx;
+  font-size: 34rpx;
+  color: black;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.placeholderStyle2 {
+  font-size: 32rpx;
+  color: gray;
+  opacity: 0.8;
+}
+
+/* 发送按钮 */
+
+.submit {
+  background-color: rgb(240, 62, 62);
+  font-size: 36rpx;
+  border-radius: 18rpx;
+  position: absolute;
+  width: 90%;
+  height: 65rpx;
+  text-align: center;
+  color: white;
+  margin: 50rpx 35rpx;
+  padding-top: 12rpx;
+}
+
+
+.image{
+  width:31%;
+  height: 100px;
+  padding: 2px;
+  /* position: relative; */
+}
+ 
+.moment_img{
+  width: 98px;
+  height: 98px;
+  /* position: relative; */
+}
+ 
+.image_content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px
+}
+.choseImg{
+  position: relative;
+}
+.choseVideo{
+  position: relative;
+}

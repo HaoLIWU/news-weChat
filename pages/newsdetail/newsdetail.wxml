@@ -1,0 +1,27 @@
+<!--pages/newsdetails/newsdtlsindex01/newsdetails01.wxml-->
+  <view class='contentTitle'>{{contentList.title}}</view>
+  <view class='date'>{{contentList.organization}} {{contentList.timeAgo}}</view>
+  <view class='image'>
+    <image src='https://cassia.top/milk-news/file/download?fileName={{contentList.url[0]}}' class='photo'></image>
+  </view>
+  <view class='paragraph'> 
+    {{contentList.content}}
+  </view>
+
+<view class='footerContent'>
+  <navigator url='/pages/comment/comment?cat={{contentList.id}}&&title={{contentList.title}}'>
+    <image src='https://www.easyicon.net/download/png/1217287/128/'></image>
+    <text>评论</text>
+  </navigator>
+  <view bindtap="haveSave">
+    <image src='{{isClick?"https://www.easyicon.net/download/png/542649/128/":"https://www.easyicon.net/download/png/538061/72/"}}' ></image>
+    <text>{{isClick?'已收藏':'收藏'}}</text>
+  </view>
+  <!-- <view bindtap="onShareAppMessage">
+    <image src='https://www.easyicon.net/download/png/1226623/128/'></image>
+    <text>分享</text> 
+  </view> -->
+  <button open-type="share" bindtap='onShareAppMessage' style='background-color: #fff;'>
+    <image src='https://www.easyicon.net/download/png/1183447/128/'></image>
+  </button>
+</view>

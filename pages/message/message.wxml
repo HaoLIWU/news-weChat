@@ -1,0 +1,7 @@
+<!--pages/message/message.wxml-->
+<view class='messageTitle title'>我的消息</view>
+<view wx:if="{{hasMessage}}" style='width:80%;padding: 20rpx 80rpx;font-size:24px;'>暂无消息！！</view>
+<view wx:for="{{messageList}}" wx:key="{{index}}" class='messageItem'>
+  <text>尊敬的{{item.wxName}}</text>
+  <text style='text-indent: 2rem;'>{{item.content}}</text>
+</view>

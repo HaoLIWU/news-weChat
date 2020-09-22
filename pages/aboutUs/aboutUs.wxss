@@ -1,0 +1,22 @@
+/* pages/aboutUs/aboutUs.wxss */
+page{
+  background-color: #FFFFF0;
+}
+text{
+  display: block;
+  text-align: center;
+}
+.appName{
+  margin: 140rpx 0 0 20rpx;
+  font-size: 40px;
+  font-weight: 700;
+}
+.appEdition{
+  font-size: 20px;
+}
+.function{
+  padding: 40rpx 70rpx;
+}
+.nodes_ul{
+  list-style: none;
+}

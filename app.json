@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/newsindex/newsindex",
+    "pages/mine/mine",
+    "pages/report/report",
+    "pages/newsdetail/newsdetail",
+    "pages/classification/internation/internation",
+    "pages/collect/collect",
+    "pages/comment/comment",
+    "pages/aboutUs/aboutUs",
+    "pages/myComment/myComment",
+    "pages/message/message",
+    "pages/newsdetail01/newsdetail01",
+    "pages/newsdetail02/newsdetail02",
+    "pages/newsdetail03/newsdetail03"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF3030",
+    "navigationBarTitleText": "简 知 新 闻",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "red",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/newsindex/newsindex",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "img/mine.png",
+        "selectedIconPath": "img/mine1.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "iconPath": "img/report.png",
+        "selectedIconPath": "img/report1.png",
+        "text": "报料"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

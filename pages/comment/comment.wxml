@@ -1,0 +1,16 @@
+<!--pages/comment/comment.wxml-->
+<!-- <text>{{ userName}}</text> -->
+<text class='commentHeader'>精彩评论</text> 
+<view wx:if='{{hasComment}}' style='width:80%;padding: 20rpx 80rpx;font-size:24px;'>暂无人评论</view>
+<view class='commmentItem' wx:key='index' wx:for='{{commentList}}'>
+  <text>{{item.wxName}}</text>
+  <text>{{item.content}}</text>
+</view> 
+<!-- 撑高最后一个view，防止被输入框挡到 -->
+<view class='propUp' style='height: 4rem'></view>
+<view class='inputView'>
+  <input class='input' placeholder='评论...' placeholder-style='color: red' bindinput='formName'></input>
+  <button class='sendInput' type='default' size='mini' bindtap='sendContent'>
+    <image src='https://www.easyicon.net/download/png/1183446/96/' style='width:86rpx; height:52rpx;padding-top: 18rpx;'></image>
+  </button>
+</view>

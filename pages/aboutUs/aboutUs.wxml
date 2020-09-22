@@ -1,0 +1,7 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+<text class='appName'>简知新闻</text>
+<text class='appEdition'>Version 1.0.1</text>
+<view class='function'>
+  <view>功能介绍：</view>
+  <rich-text nodes="{{nodes}}" class='nodes'></rich-text>
+</view>

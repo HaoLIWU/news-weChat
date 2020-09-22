@@ -1,0 +1,38 @@
+<!--pages/myComment/myComment.wxml-->
+<view class='myCommentTitle title'>我的评论</view>
+<view wx:if='{{hasComment}}' style='width:80%;padding: 20rpx 80rpx;font-size: 24px;'>暂无我的评论</view>
+<view wx:for="{{myComment}}" wx:key="{{index}}" class='content'>
+    <text>{{item.wxName}}</text>
+    <text>{{item.content}}</text>
+    <!-- <text>{{commentNewsList[index].title}}</text> -->
+    <view class='newsBox'> 
+      <navigator url='/pages/newsdetail/newsdetail?cat={{ commentNewsList[index].id }}'>
+        <view class='newsBox-title'>
+          {{commentNewsList[index].title}}
+        </view>
+        <view class='newsBox-img'>
+          <image src='https://cassia.top/milk-news/file/download?fileName={{commentNewsList[index].url[0]}}' style='width:100%;height:100%'></image>
+        </view>
+        <view class='newBox-time'>
+          <text class='organization ell' decode='true'>{{commentNewsList[index].organization}}</text>
+          <text class='time-comment' decode='{{true}}'>{{commentNewsList[index].timeAgo}}&emsp;{{commentNewsList[index].commentSize}}评论</text>
+        </view>
+      </navigator>
+    </view>
+</view>
+
+
+ <!-- <view class='newsBox'> 
+      <navigator url='/pages/newsdetail/newsdetail?cat={{ item.id }}'>
+        <view class='newsBox-title'>
+          {{item.title}}
+        </view>
+        <view class='newsBox-img'>
+          <image src='https://cassia.top/milk-news/file/download?fileName={{item.url[0]}}' style='width:100%;height:100%'></image>
+        </view>
+        <view class='newBox-time'>
+          <text decode='true'>{{item.organization}}&emsp;{{item.timeAgo}}&emsp;{{item.commentSize}}评论</text>
+        </view>
+      </navigator>
+    </view>
+  -->

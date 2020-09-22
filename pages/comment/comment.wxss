@@ -1,0 +1,46 @@
+/* pages/comment/comment.wxss */
+page{
+  background-color: #fff;
+}
+.commentHeader{
+  text-align: center;
+  display: block;
+  border-bottom: 4rpx dashed red;
+  height: 150rpx;
+  line-height: 150rpx;
+  font-size: 24px;
+}
+
+.commmentItem {
+  border-bottom: 2rpx solid #eee;
+  padding: 20rpx;
+}
+.commmentItem text{
+  display: block;
+}
+.commmentItem text:nth-child(2){
+  width: 80%;
+  padding: 0 80rpx;
+  color: #2F4F4F;
+}
+
+
+.inputView{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 86%;
+  padding:0 50rpx;
+  margin-bottom: 10rpx;
+}
+.inputView .input{
+  height: 2.6rem;
+  background-color: #eee;
+  flex-grow: 4;
+  border-radius: 10rpx 0 0 10rpx;
+  padding: 0 10rpx;
+}
+.inputView .sendInput{
+  flex-grow: 1;
+  
+}
